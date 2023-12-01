@@ -48,7 +48,7 @@ model = Sequential([
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Train the model for exactly n epochs
-model.fit(train_generator, validation_data=validation_generator, epochs=30)
+model.fit(train_generator, validation_data=validation_generator, epochs=50)
 
 # Save the entire model
 model.save('my_model.h5')
